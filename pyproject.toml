@@ -1,0 +1,29 @@
+[project]
+name = "redslds"
+version = "0.1.0"
+description = "NumPy implementation of Recurrent Explicit Duration Switching Linear Dynamical Systems (REDSLDS) and related models"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Mikołaj Słupiński" }]
+requires-python = ">=3.10"
+dependencies = [
+    "numpy",
+    "scipy",
+    "scikit-learn>=1.7,<1.9",
+    "matplotlib",
+    "seaborn",
+    "pandas",
+    "pillow",
+    "wandb",
+    "icecream",
+    "polyagamma",
+    "numba",
+    "pathos",
+]
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+include = ["phdstuff*"]
